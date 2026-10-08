@@ -57,19 +57,17 @@
             flex-direction: column;
         }
 
-        /* Scrollbar customization for the profile view */
+        /* Scrollbar customization for the profile view - Hidden completely */
         #profile-view {
             overflow-y: auto;
             overflow-x: hidden;
             background-color: #ffffff; /* White background for profile */
+            scrollbar-width: none; /* For Firefox */
         }
         
+        /* Hide scrollbar for Chrome, Safari and Opera */
         #profile-view::-webkit-scrollbar {
-            width: 5px;
-        }
-        #profile-view::-webkit-scrollbar-thumb {
-            background: #cbd5e1;
-            border-radius: 10px;
+            display: none;
         }
     </style>
 </head>
